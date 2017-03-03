@@ -51,4 +51,5 @@ Plugin 'itchyny/lightline.vim'
 "
 set laststatus=2
 set number
+set noshowmode
 set list listchars=tab:→\ ,nbsp:␣,trail:•,extends:>,precedes:<,eol:¬
