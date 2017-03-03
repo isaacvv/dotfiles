@@ -1,0 +1,6 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =4
+let g:netrw_dirhist_1='/usr/portage/profiles/default/linux/amd64/13.0/desktop'
+let g:netrw_dirhist_2='/home/isaac/.vim/bundle/Vundle.vim'
+let g:netrw_dirhist_3='/home/isaac/.vim/bundle/lightline.vim'
+let g:netrw_dirhist_4='/home/isaac/.vim'
