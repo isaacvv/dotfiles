@@ -53,3 +53,12 @@ set laststatus=2
 set number
 set noshowmode
 set list listchars=tab:→\ ,nbsp:␣,trail:•,extends:>,precedes:<,eol:¬
+
+let g:lightline = {
+      \ 'colorscheme': 'wombat',
+      \ 'component': {
+      \   'readonly': '%{&readonly?"":""}',
+      \ },
+      \ 'separator': { 'left': '', 'right': '' },
+      \ 'subseparator': { 'left': '', 'right': '' }
+      \ }
