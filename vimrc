@@ -16,6 +16,7 @@ filetype off                  " required
 " Plugin 'tpope/vim-fugitive'
 Plugin 'edkolev/tmuxline.vim'
 Plugin 'itchyny/lightline.vim'
+Plugin 'davidhalter/jedi-vim'
 " plugin from http://vim-scripts.org/vim/scripts.html
 " Plugin 'L9'
 " Git plugin not hosted on GitHub
@@ -50,15 +51,13 @@ Plugin 'itchyny/lightline.vim'
 "set langmap='q,\\,w,.e,pr,yt,fy,gu,ci,ro,lp,/[,=],aa,os,ed,uf,ig,dh,hj,tk,nl,s\\;,-',\\;z,qx,jc,kv,xb,bn,mm,w\\,,v.,z/,[-,]=,\"Q,<W,>E,PR,YT,FY,GU,CI,RO,LP,?{,+},AA,OS,ED,UF,IG,DH,HJ,TK,NL,S:,_\",:Z,QX,JC,KV,XB,BN,MM,W<,V>,Z?
 "
 set laststatus=2
-set number
+"set number
 set noshowmode
-set list listchars=tab:→\ ,nbsp:␣,trail:•,extends:>,precedes:<,eol:¬
+"set list listchars=tab:→\ ,nbsp:␣,trail:•,extends:>,precedes:<,eol:¬
+
+"set mouse+=a
 
 let g:lightline = {
       \ 'colorscheme': 'wombat',
-      \ 'component': {
-      \   'readonly': '%{&readonly?"":""}',
-      \ },
-      \ 'separator': { 'left': '', 'right': '' },
-      \ 'subseparator': { 'left': '', 'right': '' }
       \ }
+let g:tmuxline_powerline_separators = 0
