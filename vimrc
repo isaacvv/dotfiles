@@ -1,22 +1,33 @@
-set nocompatible              " be iMproved, required
-filetype off                  " required
+execute pathogen#infect()
+syntax on
+filetype plugin indent on
+let g:airline_theme='badwolf'
+imap hh <Esc> 
+
+
+"set nocompatible              " be iMproved, required
+"filetype off                  " required
 
 " set the runtime path to include Vundle and initialize
- set rtp+=~/.vim/bundle/Vundle.vim
- call vundle#begin()
+" set rtp+=~/.vim/bundle/Vundle.vim
+" call vundle#begin()
 " " alternatively, pass a path where Vundle should install plugins
 " "call vundle#begin('~/some/path/here')
 "
 " let Vundle manage Vundle, required
- Plugin 'VundleVim/Vundle.vim'
+" Plugin 'VundleVim/Vundle.vim'
 "
 " The following are examples of different formats supported.
 " Keep Plugin commands between vundle#begin/end.
 " plugin on GitHub repo
 " Plugin 'tpope/vim-fugitive'
-Plugin 'edkolev/tmuxline.vim'
-Plugin 'itchyny/lightline.vim'
-Plugin 'davidhalter/jedi-vim'
+"Plugin 'edkolev/tmuxline.vim'
+"Plugin 'itchyny/lightline.vim'
+"Plugin 'davidhalter/jedi-vim'
+"Plugin 'vim-airline/vim-airline'
+"Plugin 'tpope/vim-fugitive'
+"Plugin 'ctrlpvim/ctrlp.vim'
+"Plugin 'dense-analysis/ale'
 " plugin from http://vim-scripts.org/vim/scripts.html
 " Plugin 'L9'
 " Git plugin not hosted on GitHub
@@ -31,8 +42,8 @@ Plugin 'davidhalter/jedi-vim'
 " Plugin 'ascenator/L9', {'name': 'newL9'}
 "
 " All of your Plugins must be added before the following line
- call vundle#end()            " required
- filetype plugin indent on    " required
+" call vundle#end()            " required
+" filetype plugin indent on    " required
 " To ignore plugin indent changes, instead use:
 " filetype plugin on
 "
@@ -50,14 +61,14 @@ Plugin 'davidhalter/jedi-vim'
 
 "set langmap='q,\\,w,.e,pr,yt,fy,gu,ci,ro,lp,/[,=],aa,os,ed,uf,ig,dh,hj,tk,nl,s\\;,-',\\;z,qx,jc,kv,xb,bn,mm,w\\,,v.,z/,[-,]=,\"Q,<W,>E,PR,YT,FY,GU,CI,RO,LP,?{,+},AA,OS,ED,UF,IG,DH,HJ,TK,NL,S:,_\",:Z,QX,JC,KV,XB,BN,MM,W<,V>,Z?
 "
-set laststatus=2
+"set laststatus=2
 "set number
-set noshowmode
+"set noshowmode
 "set list listchars=tab:→\ ,nbsp:␣,trail:•,extends:>,precedes:<,eol:¬
 
 "set mouse+=a
 
-let g:lightline = {
-      \ 'colorscheme': 'wombat',
-      \ }
+"let g:lightline = {
+"      \ 'colorscheme': 'wombat',
+"      \ }
 "let g:tmuxline_powerline_separators = 0
